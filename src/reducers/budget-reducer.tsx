@@ -18,6 +18,7 @@ export type BudgetState = {
     editingId: Expense['id']
 }
 
+// para tener consistencia en una pagina
 const initialBudget = () : number => {
     const localStorageBudget = localStorage.getItem('budget')
     return localStorageBudget ? +localStorageBudget : 0
